@@ -10,10 +10,10 @@ ${HEADLESS}  false
 
 *** Keywords ***
 Open And Configure Browser
-    IF  $BROWSER == 'chrome'
-        ${options}  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys
-    ELSE IF  $BROWSER == 'firefox'
+    IF  $BROWSER == 'firefox'
         ${options}  Evaluate  sys.modules['selenium.webdriver'].FirefoxOptions()  sys
+    ELSE IF  $BROWSER == 'chrome'
+        ${options}  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys
     END
     IF  $HEADLESS == 'true'
         Set Selenium Speed  0
