@@ -1,7 +1,7 @@
 # webcounter
 ### Ohjeet testeille
-poetry shell  
-python3 src/index.py  
+`poetry shell`  
+`python3 src/index.py`  
 Avaa uusi terminal ikkuna  
-poetry shell  
-robot --variable BROWSER:firefox src/tests
+`poetry shell`  
+`robot --variable BROWSER:firefox src/tests`
